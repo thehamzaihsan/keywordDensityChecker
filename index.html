@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyword Density Checker</title>
+    <script src="sript.js" defer></script>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script>tailwind.config = { theme: { extend: { colors: { clifford: '#da373d', } } } }</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+</head>
+
+<body class="bg-blue-400">
+
+
+    <h1 class="text-center text-3xl m-4">Keyword Density Checker</h1>
+    <form class="flex justify-center items-center flex-col gap-2 my-8">
+        <textarea class="border-black border-2 max-w-3xl  p-1 m-2 focus:outline-none" name="input-area" id="input-area"
+            cols="50" rows="10" title="input-area" placeholder="Input Text Here...."></textarea>
+        <button class=" border-black border-2 p-2 bg-amber-500 hover:bg-black hover:text-white  opacity-100 "
+            type="button" title="submit-button" onclick="check()">Calculate Density</button>
+    </form>
+
+
+    <div class="table-wrapper flex justify-center m-3">
+        <table id="freq_table">
+        </table>
+    </div>
+
+</body>
+
+</html>

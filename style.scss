@@ -1,0 +1,64 @@
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700");
+
+$base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+$color-alpha: #1772ff;
+$color-form-highlight: #eeeeee;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+table {
+  width: 80%;
+}
+
+th {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: ($half-spacing-unit * 1.5) 0;
+  color: white;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+tr {
+  display: flex;
+  width: 100%;
+
+  background: white;
+  &:nth-of-type(odd) {
+    background: $color-form-highlight;
+  }
+}
+
+td {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+tr:nth-child(1) {
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
