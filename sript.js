@@ -66,7 +66,7 @@ const conjunctions = [
   " i ",
   " do ",
   " & ",
-  "i ",
+  " i ",
   " from ",
   " of ",
 ];
