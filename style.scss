@@ -62,3 +62,13 @@ td {
 tr:nth-child(1) {
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
+
+textarea{
+  max-width: 48rem;
+}
+
+@media (max-width:50rem) {
+  textarea{
+    max-width: calc(100vw - 2rem);
+  }
+}
