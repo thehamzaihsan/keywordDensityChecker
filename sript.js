@@ -67,6 +67,8 @@ const conjunctions = [
   " do ",
   " & ",
   "i ",
+  " from ",
+  " of ",
 ];
 
 function check() {
@@ -84,6 +86,7 @@ function check() {
     sentence = sentence.replace(".", "");
     sentence = sentence.replace("\n", " ");
     sentence = sentence.replace("\n\n", " ");
+    sentence = sentence.replace("?", " ");
   }
 
   sortedFrequency = frequency(sentence);
