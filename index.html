@@ -15,28 +15,26 @@
 <body class="bg-blue-400">
 
 
-    <h1 class="text-center text-3xl m-4">Keyword Density Checker</h1>
-    <form class="flex justify-center items-center flex-col gap-2 my-8 mx-8 px-8">
-        <textarea class="border-black border-2 p-1 focus:outline-none " name="input-area" id="input-area"
-            cols="50" rows="10" title="input-area" placeholder="Input Text Here...."></textarea>
-        <button class=" border-black border-2 p-2 bg-amber-500 hover:bg-black hover:text-white  opacity-100 "
-            type="button" title="submit-button" onclick="check()">Calculate Density</button>
-    </form>
-
-  
-
-    <div class="table-wrapper flex justify-center m-3">
-        <table id="freq_table">
-        </table>
-    </div>
-
-    <div class="quote flex flex-col gap-1 items-center">
-        <div class="max-w-3xl flex gap-2 flex-col">
-            <h2 class="text-2xl font-bold">What is good keyword density?</h2>
-            <p>While there are no hard and fast rules for keyword density beyond always-relevant "don't keyword stuff" advice, many SEOs recommend using approximately 2-4 keyword for every 100 words of copy. That factors in to about 2-4% keyword density.</p>
-            <p class="font-light italic">-Hubspot</p>
+    <main>
+        <h1 class="text-center text-3xl m-4">Keyword Density Checker</h1>
+        <form class="flex justify-center items-center flex-col gap-2 my-8 mx-8 px-8">
+            <textarea class="border-black border-2 p-1 focus:outline-none " name="input-area" id="input-area"
+                cols="50" rows="10" title="input-area" placeholder="Input Text Here...."></textarea>
+            <button class=" border-black border-2 p-2 bg-amber-500 hover:bg-black hover:text-white  opacity-100 "
+                type="button" title="submit-button" onclick="check()">Calculate Density</button>
+        </form>
+        <div class="table-wrapper flex justify-center m-3">
+            <table id="freq_table">
+            </table>
         </div>
-    </div>
+        <div class="quote flex flex-col gap-1 items-center">
+            <div class="flex gap-2 flex-col quote_inner mt-3">
+                <h2 class="text-2xl font-bold">What is good keyword density?</h2>
+                <p>While there are no hard and fast rules for keyword density beyond always-relevant "don't keyword stuff" advice, many SEOs recommend using approximately 2-4 keyword for every 100 words of copy. That factors in to about 2-4% keyword density.</p>
+                <p class="font-light italic">-Hubspot</p>
+            </div>
+        </div>
+    </main>
 
     <footer class="p-4 mt-4 text-center bg-blue-600">
         <p class="m-0">Made by Hamza Ihsan 👋</p>

@@ -63,12 +63,30 @@ tr:nth-child(1) {
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
-textarea{
+textarea, .quote_inner{
   max-width: 48rem;
 }
 
+table{
+  width:48rem;
+}
+
 @media (max-width:50rem) {
-  textarea{
+  textarea, .quote_inner , table {
     max-width: calc(100vw - 2rem);
   }
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
 }
